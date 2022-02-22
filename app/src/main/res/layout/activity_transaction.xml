@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:id="@+id/activity_transaction"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Transaction.TransactionActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--top-->
+        <RelativeLayout
+            android:id="@+id/relayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/layout_top_tabs"/>
+        </RelativeLayout>
+
+        <!--center-->
+        <RelativeLayout
+            android:id="@+id/relayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relayout1">
+            <include layout="@layout/layout_center_viewpager"/>
+
+        </RelativeLayout>
+
+        <!--bottom-->
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">QUẢN LÝ CHI TIÊU CÁ NHÂN</string>
+    <string name="user_name">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="transaction">Sổ giao dịch</string>
+    <string name="report">Báo cáo</string>
+    <string name="add">Thêm giao dịch</string>
+    <string name="plan">Lập kế hoạch</string>
+    <string name="account">Tài khoản</string>
+    <string name="wallet">Ví của tôi</string>
+    <string name="group">Nhóm</string>
+    <string name="tools">Công cụ</string>
+    <string name="setting">Cài đặt</string>
+    <string name="help">Hỗ trợ</string>
+    <string name="about">Thông tin liên lạc</string>
+    <string name="introduce">Giới thiệu</string>
+    <string name="channel_name">Kế hoạch</string>
+    <string name="channel_description">Kế hoạch được thiết lập</string>
+
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="remember_me">Nhớ tài khoản</string>
+
+
+</resources>

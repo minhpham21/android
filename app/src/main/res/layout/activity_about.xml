@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="29dp"
+                android:text="* Thông tin liên lạc:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt__"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="________*0o0*_________"
+                android:layout_gravity="center"
+                android:textColor="#A6A3A3"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="1. Vũ Tuấn Trường"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textgmail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="1751012076truong@ou.edu.vn"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_gravity="right" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="2. Phạm Tuấn Minh"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/textgmail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="1751012041minh@ou.edu.vn"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_gravity="right" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="3. Võ Đức Hiên"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/textgmail3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="1751012018hien@ou.edu.vn"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_gravity="right" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="4. Nguyễn Văn Hoàng"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/textgmail4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="1751012025hoang@ou.edu.vn"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_gravity="right" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="5. Trần Thị Thảo Nguyên"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/textgmail5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:text="1751012093nguyen@ou.edu.vn"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_gravity="right" />
+
+            <TextView
+                android:id="@+id/textVie6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:text="Số điện thoại liên lạc: 0363.779.572 (T. Trường)"
+                android:textColor="#474545"
+                android:textSize="18dp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

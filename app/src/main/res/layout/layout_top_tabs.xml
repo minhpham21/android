@@ -1,0 +1,28 @@
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="#A4000000">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="lollipop"
+                android:background="#90FFFEFE">
+            </com.google.android.material.tabs.TabLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+
+</merge>

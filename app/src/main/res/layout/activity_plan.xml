@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:id="@+id/activity_transaction"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ln_plan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_plan1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kế hoạch 1:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_title1"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Chủ đề.."
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Switch
+                android:id="@+id/sw_OnOff1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="On/Off"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_ngay1"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Chọn ngày:"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_gio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:hint="Chọn giờ:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_note1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Nội dung..."
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ln_plan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="195dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_plan2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kế hoạch 2:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt_title2"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Chủ đề.."
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+
+            <Switch
+                android:id="@+id/sw_OnOff2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="On/Off"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/txt_ngay2"
+                android:layout_width="84dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Chọn ngày:"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_gio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:hint="Chọn giờ:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_note2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Nội dung..."
+            android:inputType="textPersonName" />
+
+
+
+    </LinearLayout>
+        <!--bottom-->
+        <include layout="@layout/layout_bottom_navigation_view"/>
+
+</RelativeLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

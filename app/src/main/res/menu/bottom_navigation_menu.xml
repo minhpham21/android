@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/transaction"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:title="@string/transaction"
+        android:icon="@drawable/ic_wallet_black_24dp"/>
+
+    <item
+        android:id="@+id/report"
+        android:title="@string/report"
+        android:icon="@drawable/ic_report_24dp"/>
+    <item
+        android:id="@+id/add"
+        android:title="@string/add"
+        android:icon="@drawable/ic_add_circle_black_24dp"/>
+    <item
+        android:id="@+id/plan"
+        android:title="@string/plan"
+        android:icon="@drawable/ic_plan_black_24dp"/>
+    <item
+        android:id="@+id/account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_account_circle_black_24dp"/>
+</menu>

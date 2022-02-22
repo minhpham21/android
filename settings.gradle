@@ -1,0 +1,2 @@
+rootProject.name='DoAnLTDD'
+include ':app'

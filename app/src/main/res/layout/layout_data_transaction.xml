@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txt_loaigiaodich"
+        android:layout_width="94dp"
+        android:layout_height="83dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="THU/CHI"
+        android:textColor="#FF0000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_noidung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/txt_loaigiaodich"
+        android:text="Nội dung"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txt_sotien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/txt_noidung"
+        android:text="Số tiền"
+        android:layout_marginStart="15dp"
+        android:textColor="#FF5722"
+        android:textSize="24dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/txt_ngaythang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_noidung"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/txt_loaigiaodich"
+        android:text="Ngày tháng"
+        android:textColor="#632FC1"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>

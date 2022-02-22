@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+
+        android:layout_marginTop="370dp"
+
+        android:background="#00FFFFFF"
+        android:hint="Reset"
+        android:textColorHint="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/ln_add"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A4F6F6F6">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/appbar_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/back_add"
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_centerVertical="true"
+
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+
+                        android:src="@drawable/ic_back_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_centerVertical="true"
+
+                        android:layout_toRightOf="@+id/back_add"
+
+                        android:text="@string/add"
+                        android:textSize="25dp" />
+
+                    <Button
+                        android:id="@+id/btn_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentRight="true"
+
+                        android:background="#00FFFFFF"
+
+                        android:hint="Lưu"
+
+                        android:textColorHint="#000000" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ln_num"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="50dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/ic_num_foreground" />
+
+            <EditText
+                android:id="@+id/edt_num"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:hint="0"
+                android:inputType="number"
+                android:textColor="#DA00FF"
+
+                android:textColorHint="#716C6C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_group"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@android:drawable/checkbox_on_background"
+                tools:srcCompat="@android:drawable/checkbox_on_background" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rd_thu"
+                    android:layout_width="98dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="THU"
+                    android:textColor="#FF0000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/rd_chi"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="CHI"
+                    android:textColor="#0027FF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_note"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/ic_note_foreground" />
+
+            <EditText
+                android:id="@+id/edt_content"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:hint="Nội dung..."
+                android:inputType="text"
+
+                android:textColor="#000000"
+                android:textColorHint="#716C6C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_calendar"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/ic_calendar_foreground" />
+
+            <TextView
+                android:id="@+id/edt_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:gravity="center_vertical"
+                android:hint="Chọn ngày"
+                android:textColor="#008EFF"
+                android:textColorHint="#716C6C"
+
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

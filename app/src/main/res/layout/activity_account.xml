@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_account"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.AccountActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_account"
+
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:hint="Chưa đăng nhập tài khoản"
+                android:src="@drawable/ic_launcher_foreground"
+                android:gravity="center"
+                android:textColor="#FF0000"
+                android:textColorHighlight="#00E2FF"
+                android:textColorHint="#007BFF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:id="@+id/group"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+
+                    android:onClick="onClick_infor"
+
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/ic_group_foreground" />
+
+                    <Button
+                        android:id="@+id/bt_infor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="#000000"
+                        android:textSize="18dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#00FFFFFF"
+                        android:gravity="left|center"
+                        android:hint="Thông tin cá nhân"
+                        android:onClick="onClick_infor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tool"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:onClick="onClick_tool"
+
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/ic_tool_foreground" />
+
+                    <Button
+                        android:id="@+id/bt_tool"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="onClick_tool"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#00FFFFFF"
+                        android:hint="@string/tools"
+                        android:gravity="left|center"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+
+                    android:fontFamily="sans-serif-smallcaps"
+
+                    android:gravity="center"
+                    android:text="_______________________________________" />
+
+                <LinearLayout
+                    android:id="@+id/setting"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:onClick="onClick_setting"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/ic_setting_foreground" />
+
+                    <Button
+                        android:id="@+id/bt_setting"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="onClick_setting"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#00FFFFFF"
+                        android:hint="@string/setting"
+                        android:gravity="left|center"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:gravity="center"
+                    android:text="_______________________________________" />
+
+                <LinearLayout
+                    android:id="@+id/help"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:onClick="onClick_help"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/ic_help_foreground" />
+
+                    <Button
+                        android:id="@+id/bt_help"
+                        android:onClick="onClick_help"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="#000000"
+                        android:textSize="18dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:background="#00FFFFFF"
+
+                        android:hint="@string/about"
+                        android:gravity="left|center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/about"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:onClick="onClick_about"
+
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+
+                        android:src="@drawable/ic_about_foreground" />
+
+                    <Button
+                        android:id="@+id/bt_about"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="#00FFFFFF"
+                        android:gravity="left|center"
+                        android:hint="@string/introduce"
+                        android:onClick="onClick_about"
+                        android:textColorHint="#000000"
+                        android:textSize="18dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <include layout="@layout/layout_bottom_navigation_view"/>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

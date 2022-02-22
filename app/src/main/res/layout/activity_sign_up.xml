@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#9A000000"
+    tools:ignore="MissingConstraints">
+
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center"
+            android:text="ĐĂNG KÝ TÀI KHOẢN"
+            android:textSize="25dp"
+            android:textColor="#FFFF"/>
+
+        <EditText
+
+            android:id="@+id/newUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+
+            android:hint="Tên đăng nhập"
+
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+
+            android:textColorHint="#70FFFFFF" />
+
+        <EditText
+            android:id="@+id/newPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+
+            android:hint="Mật khẩu"
+
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+
+            android:textColorHint="#70FFFFFF" />
+
+        <EditText
+            android:id="@+id/testPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+
+            android:hint="Nhập lại mật khẩu"
+
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+
+            android:textColorHint="#70FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_SingUp"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:hint="@string/sign_up"
+
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/btn_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:hint="Huỷ"
+
+            android:textColorHint="#000000" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
